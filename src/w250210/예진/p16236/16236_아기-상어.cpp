@@ -11,7 +11,7 @@ bool visit[21][21];
 int dy[4] = { 0, 0, -1, 1 }, dx[4] = { -1, 1, 0, 0 };
 
 int bfsFromFish(int toY, int toX) {
-	// ÃÊ±âÈ­
+	// ì´ˆê¸°í™”
 	queue<pair<pair<int, int>, int>> q;
 	fill(&visit[0][0], &visit[n - 1][n], 0);
 	q.push({ { sharkY, sharkX }, 0});
@@ -43,16 +43,16 @@ int bfsFromFish(int toY, int toX) {
 }
 
 void eatFish(int toY, int toX, int dist) {
-	// 1. »ó¾î À§Ä¡ °»½Å
+	// 1. ìƒì–´ ìœ„ì¹˜ ê°±ì‹ 
 	arr[sharkY][sharkX] = 0;
 	arr[toY][toX] = 9;
 	sharkY = toY;
 	sharkX = toX;
 
-	// 2. Á¤´ä ÃÊ °Å¸®¸¸Å­ ´õÇØÁÖ±â
+	// 2. ì •ë‹µ ì´ˆ ê±°ë¦¬ë§Œí¼ ë”í•´ì£¼ê¸°
 	timeCnt += dist;
 
-	// 3. »ó¾î size °»½Å
+	// 3. ìƒì–´ size ê°±ì‹ 
 	if (++currEatCnt == sharkSize) {
 		currEatCnt = 0;
 		sharkSize++;
@@ -69,7 +69,7 @@ int main() {
 		for (int j = 0; j < n; j++) {
 			cin >> arr[i][j];
 			if (arr[i][j] != 9) continue;
-			//»ó¾îÀÎ °æ¿ì
+			//ìƒì–´ì¸ ê²½ìš°
 			sharkY = i;
 			sharkX = j;
 		}
@@ -79,19 +79,19 @@ int main() {
 		int minDistY = 0, minDistX = 0, minDist = 1000;
 		for (int i = 0; i < n; i++) {
 			for (int j = 0; j < n; j++) {
-				// ºó Ä­, »ó¾î°¡ ÀÖ´Â Ä­, »ó¾îº¸´Ù ´õ Å« »ı¼±ÀÌ ÀÖ´Â Ä­Àº pass
+				// ë¹ˆ ì¹¸, ìƒì–´ê°€ ìˆëŠ” ì¹¸, ìƒì–´ë³´ë‹¤ ë” í° ìƒì„ ì´ ìˆëŠ” ì¹¸ì€ pass
 				if (arr[i][j] == 0 || arr[i][j] == 9 || arr[i][j] >= sharkSize) continue;
 
 				int currDist = bfsFromFish(i, j);
 
 				if (currDist > minDist) continue;
 
-				// ÇöÀç±îÁö Å½»ö Áß °°Àº ÃÖ´Ü°Å¸®ÀÏ °æ¿ì
+				// í˜„ì¬ê¹Œì§€ íƒìƒ‰ ì¤‘ ê°™ì€ ìµœë‹¨ê±°ë¦¬ì¼ ê²½ìš°
 				if (currDist == minDist) {
-					if (minDistY < i) continue; // °°Àº °Å¸®, minÀÇ y°ªÀÌ ÀÛÀ» ¶§
-					if (minDistY == i && minDistX < j) continue; //°°Àº °Å¸®, y°ªÀÌ °°°í minÀÇ x °ªÀÌ ´õ ÀÛÀ» ¶§
+					if (minDistY < i) continue; // ê°™ì€ ê±°ë¦¬, minì˜ yê°’ì´ ì‘ì„ ë•Œ
+					if (minDistY == i && minDistX < j) continue; //ê°™ì€ ê±°ë¦¬, yê°’ì´ ê°™ê³  minì˜ x ê°’ì´ ë” ì‘ì„ ë•Œ
 
-					//³²Àº °æ¿ì´Â ¹«Á¶°Ç i, ÇöÀç Å½»öÇÑ ÁöÁ¡ÀÌ ´õ ÀÛÀ½ -> °»½Å
+					//ë‚¨ì€ ê²½ìš°ëŠ” ë¬´ì¡°ê±´ i, í˜„ì¬ íƒìƒ‰í•œ ì§€ì ì´ ë” ì‘ìŒ -> ê°±ì‹ 
 					minDistY = i;
 					minDistX = j;
 					continue;
