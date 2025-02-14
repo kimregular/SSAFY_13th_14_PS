@@ -45,12 +45,5 @@ public class Main {
 		}
 		
 	}
-	
-	public static void print(int[] answer) {
-		for(int i=0; i<m; i++) {
-			System.out.print(answer[i] + " ");
-		}
-		System.out.println();
-	}
 
 }
