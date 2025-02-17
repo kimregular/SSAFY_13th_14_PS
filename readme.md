@@ -28,4 +28,9 @@
 - 삼성 : [아기상어(BFS)](https://www.acmicpc.net/problem/16236)
 - 일반 문제 : BFS, DFS
 
+### 250217
+
+- 삼성 : [나무 재테크(구현)](https://www.acmicpc.net/problem/16235)
+- 일반 문제 : 이분탐색, 백트래킹
+
 ## 기타
