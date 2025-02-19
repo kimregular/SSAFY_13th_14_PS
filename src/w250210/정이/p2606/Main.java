@@ -1,11 +1,6 @@
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.InputStreamReader;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Queue;
-import java.util.StringTokenizer;
+package src.w250210.정이.p2606;
+import java.io.*;
+import java.util.*;
 
 public class Main {
 	

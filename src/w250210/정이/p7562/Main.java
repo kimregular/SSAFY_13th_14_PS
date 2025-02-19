@@ -1,4 +1,4 @@
-package w250210.정이.p7562;
+package src.w250210.정이.p7562;
 import java.util.*;
 import java.io.*;
 
