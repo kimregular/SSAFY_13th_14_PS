@@ -1,18 +1,13 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.InputStreamReader;
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Queue;
-import java.util.StringTokenizer;
+package src.w250210.정이.p6118;
+import java.io.*;
+import java.util.*;
 
-public class P6118 {
+public class Main {
 	
 	static int N;
 	static int M;
 	static boolean[] visit;
 	static int[] count;
-//	static ArrayList<ArrayList<Integer>> list = new ArrayList<>();
 	static ArrayList<Integer>[] ar;
 	
 	public static void main(String[] args) throws Exception {
@@ -24,18 +19,6 @@ public class P6118 {
 		ar = new ArrayList[N];
 		visit = new boolean[N];
 		count = new int[N];
-		
-//		for(int i=0; i<N; i++) {
-//			list.add(new ArrayList<>());
-//		}
-//		
-//		for(int i=0; i<M; i++) {
-//			st = new StringTokenizer(br.readLine());
-//			int index = Integer.parseInt(st.nextToken());
-//			int item = Integer.parseInt(st.nextToken());
-//			
-//			list.get(index).add(item);
-//		}
 			
 		for(int i=1; i<N; i++) {
 			ar[i] = new ArrayList<Integer>();

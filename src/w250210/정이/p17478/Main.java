@@ -1,4 +1,4 @@
-
+package src.w250210.정이.p17478;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
