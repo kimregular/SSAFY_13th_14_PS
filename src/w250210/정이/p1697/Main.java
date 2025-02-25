@@ -1,11 +1,8 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.InputStreamReader;
-import java.util.ArrayDeque;
-import java.util.Queue;
-import java.util.StringTokenizer;
+package src.w250210.정이.p1697;
+import java.io.*;
+import java.util.*;
 
-public class P1697 {
+public class Main {
 	
 	static int start;
 	static int end;
@@ -13,8 +10,7 @@ public class P1697 {
 	static boolean[] visit = new boolean[100001];
 	
 	public static void main(String[] args) throws Exception {
-//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		BufferedReader br = new BufferedReader(new FileReader("src/input.txt"));
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = new StringTokenizer(br.readLine());
 		start = Integer.parseInt(st.nextToken());
 		end = Integer.parseInt(st.nextToken());
