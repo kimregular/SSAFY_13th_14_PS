@@ -1,3 +1,5 @@
+package src.w250210.정이.p1012;
+
 import java.util.*;
 import java.io.*;
 public class Main {
