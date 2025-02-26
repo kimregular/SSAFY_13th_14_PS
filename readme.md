@@ -33,4 +33,9 @@
 - 삼성 : [나무 재테크(구현)](https://www.acmicpc.net/problem/16235)
 - 일반 문제 : 이분탐색, 백트래킹
 
+### 250224
+
+- 삼성 : [인구 이동](https://www.acmicpc.net/problem/16234)
+- 일반 문제 : 그래프
+
 ## 기타
