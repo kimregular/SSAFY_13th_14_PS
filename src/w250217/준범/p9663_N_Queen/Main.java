@@ -1,10 +1,9 @@
-package w250217.준범.p9663_N-Queen;
+package w250217.준범.p9663_N_Queen;
 
-import java.util.*;
 import java.io.*;
 
 
-class Main {
+public class Main {
     static int n;
     static int cnt = 0;
     static int[] board;//board[row] = col : 해당 행에 배치된 퀸의 열
