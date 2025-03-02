@@ -62,7 +62,8 @@ class Main {
         for(Tree t : death) {
             ground[t.x][t.y] += (t.age/2);
         }
-        death.clear();
+        //death.clear();
+        death = new ArrayList<>();
     }
 
     static void fall() {
