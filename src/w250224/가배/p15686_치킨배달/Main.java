@@ -31,7 +31,7 @@ public class Main {
         comb(0, 0);
         System.out.println(ans);
     }
-    private static void comb(int cnt, int start) { //M개 고르는 조합 찾기
+    static void comb(int cnt, int start) { //M개 고르는 조합 찾기
         if (cnt == M) {
             ans = Math.min(ans, calDistance());
             return;
@@ -41,7 +41,7 @@ public class Main {
             comb(cnt + 1, i + 1);
         }
     }
-    private static int calDistance() { //집과 치킨집 간에 거리 최소값(제일 가까운 치킨집과의 거리)
+    static int calDistance() { //집과 치킨집 간에 거리 최소값(제일 가까운 치킨집과의 거리)
         int tot = 0;
         for (int[] house : house) { 
             int minDis = Integer.MAX_VALUE;
