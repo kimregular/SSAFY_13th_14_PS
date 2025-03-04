@@ -2,7 +2,7 @@ package w250224.정이.p16234;
 
 import java.io.*;
 import java.util.*;
-
+    
 public class Main {
 	static int N, L, R, count;
 	static int[][] ar;
