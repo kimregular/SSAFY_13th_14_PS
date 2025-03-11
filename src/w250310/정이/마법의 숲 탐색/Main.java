@@ -129,7 +129,6 @@ public class Main {
                 }
             }
         }
-        System.out.println(maxRow+1);
         answer += maxRow+1;
     }
 
