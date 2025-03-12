@@ -1,4 +1,4 @@
-package w250303.준범.인구이동;
+package w250303.준범.고대유적탐사;
 
 import java.util.*;
 import java.io.*;
