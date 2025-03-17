@@ -1,4 +1,4 @@
-package w250224.가배.p15686_치킨배달;
+package 
 
 import java.io.*;
 import java.util.*;
